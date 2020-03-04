@@ -5,13 +5,21 @@ import './App.css';
 // Public Screens
 import HomePage from './screens/public/HomePage';
 import AboutUs from './screens/public/AboutUs';
+import NavBar from './components/public/NavBar';
+import NewsLetter from './components/public/NewsLetter';
+import Footer from './components/public/Footer';
 
 function App() {
   return (
-    <Switch>
-      <Route exact path="/" component={HomePage}/>
-      <Route path="/about-us" component={AboutUs}/>
-    </Switch>
+    <>
+      <NavBar/>
+      <Switch>
+        <Route exact path="/" component={HomePage}/>
+        <Route path="/about-us" component={AboutUs}/>
+      </Switch>
+      <NewsLetter/>
+      <Footer/>
+    </>
   );
 }
 

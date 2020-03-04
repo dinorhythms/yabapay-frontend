@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import { PersistGate } from 'redux-persist/integration/react'
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import "./font.css";
 import App from './App';
@@ -17,7 +18,7 @@ ReactDOM.render(
     <PersistGate loading={null} persistor={persistor}>
       <Router basename='/'>
         <App />
-        </Router>
+      </Router>
     </PersistGate>
   </Provider>
   , document.getElementById('root'));
