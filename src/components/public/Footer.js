@@ -26,28 +26,28 @@ const Footer = () => {
 				<Row>
 					<Col xs={12} md={3} className="mt-5">
 						<h6>HELP</h6>
-						<ul class="list-group mt-4">
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+						<ul className="list-group mt-4">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Faq
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Contact Us
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Live Chat
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Login
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Career
 								</a>
@@ -56,18 +56,18 @@ const Footer = () => {
 					</Col>
 					<Col xs={12} md={3} className="mt-5">
 						<h6>INFORMATION</h6>
-						<ul class="list-group mt-4">
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+						<ul className="list-group mt-4">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Privacy Policy
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Term of Use
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Social Media
 								</a>
@@ -76,28 +76,28 @@ const Footer = () => {
 					</Col>
 					<Col xs={12} md={3} className="mt-5">
 						<h6>QUICK LINKS</h6>
-						<ul class="list-group mt-4">
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+						<ul className="list-group mt-4">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									About Us
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Features
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Sign up
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Login
 								</a>
 							</li>
-							<li class="list-group-item bg-transparent border-0 p-0 mb-2">
+							<li className="list-group-item bg-transparent border-0 p-0 mb-2">
 								<a href="/" className="text-secondary">
 									Career
 								</a>
