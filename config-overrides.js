@@ -25,6 +25,7 @@ module.exports = override(
     path.resolve('node_modules/static-container'),
   ]),
   addBabelPlugins(
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-modules-commonjs"
   ),
 );
