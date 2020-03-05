@@ -8,6 +8,7 @@ import AboutUs from './screens/public/AboutUs';
 import NavBar from './components/public/NavBar';
 import NewsLetter from './components/public/NewsLetter';
 import Footer from './components/public/Footer';
+import FeaturesPage from './screens/public/FeaturesPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage}/>
         <Route path="/about-us" component={AboutUs}/>
+        <Route path="/features" component={FeaturesPage}/>
       </Switch>
       <NewsLetter/>
       <Footer/>
