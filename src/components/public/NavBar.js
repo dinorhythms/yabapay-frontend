@@ -21,7 +21,7 @@ export default function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto mr-5">
             <Nav.Link as={Link} to="/about-us">About</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link as={Link} to="/features">Features</Nav.Link>
             <Nav.Link href="#pricing">Contact</Nav.Link>
           </Nav>
           <div>

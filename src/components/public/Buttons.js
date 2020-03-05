@@ -14,6 +14,6 @@ const classes = {
 
 export function LgButton({ text }) {
   return (
-    <Button variant="primary" size="lg" className="pl-5 pr-5 pt-3 pb-3" style={classes.blue}>{ text }</Button>
+    <Button variant="primary" size="lg" className="pl-5 pr-5 pt-2 pb-2" style={classes.blue}>{ text }</Button>
   )
 }

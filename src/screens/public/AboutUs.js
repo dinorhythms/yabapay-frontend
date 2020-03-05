@@ -5,10 +5,12 @@ import AppDownload from '../../components/public/AppDownload';
 import PageHeader from '../../components/public/PageHeader';
 import CoreValues from '../../components/public/CoreValues';
 
+import bg from '../../assets/images/bg/bg_header.jpg';
+
 const AboutUs = () => {
   return (
     <>
-      <PageHeader rootPage="Home" currentPage="About Us"/>
+      <PageHeader rootPage="Home" currentPage="About Us" bg={bg}/>
       <section className="pt-5 pb-5">
         <Container>
           <Row>

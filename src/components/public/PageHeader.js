@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import bg from '../../assets/images/bg/bg_header.jpg';
 import { stylesColors } from '../../utils/publicVariables';
 
 const { blue, white } = stylesColors;
 
-const classes = {
-  container: {
+const getStyles = (bg) => {
+  return {
     backgroundImage: `url(${bg})`,
     backgroundColor: blue,
     color: white,
@@ -17,9 +16,9 @@ const classes = {
   }
 }
 
-const PageHeader = ({ currentPage, rootPage }) => {
+const PageHeader = ({ currentPage, rootPage, bg }) => {
   return (
-    <div style={classes.container} className="">
+    <div style={getStyles(bg)}>
       <Container className="h-100">
         <Row className="h-100">
           <Col xs={12} className="my-auto">
