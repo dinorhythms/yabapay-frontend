@@ -66,7 +66,7 @@ const ContactPage = () => {
                   <Form.Control size="lg" type="email" placeholder="Enter email" style={classes.inputs} />
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                  <Form.Control as="textarea" rows="7" value="Message" />
+                  <Form.Control as="textarea" rows="7" defaultValue="Message" />
                 </Form.Group>
                 <Button variant="primary" size="lg" block type="submit" style={{backgroundColor: blue}}>
                   Submit
@@ -74,7 +74,7 @@ const ContactPage = () => {
               </Form>
             </Col>
             <Col>
-              <img src={staticMap} class="img-fluid" alt="map"/>
+              <img src={staticMap} className="img-fluid" alt="map"/>
             </Col>
           </Row>
         </Container>

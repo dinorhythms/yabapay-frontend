@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import { stylesColors } from '../../utils/publicVariables';
+import AuthModal from './AuthModal';
 
 const { blue } = stylesColors;
 
@@ -13,6 +14,9 @@ const classes = {
 }
 
 export default function NavBar() {
+
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <Navbar expand="md" fixed="top" variant="light" bg="light" className="pt-3 pb-3">
       <Container>
@@ -25,10 +29,14 @@ export default function NavBar() {
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
           <div>
-            <Button variant="outline-primary" className="mr-2">Login</Button>
+            <Button variant="outline-primary" className="mr-2" onClick={() => setModalShow(true)}>Login</Button>
             <Button variant="primary" style={classes.button}>Signup</Button>
           </div>
         </Navbar.Collapse>
+        <AuthModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
       </Container>
     </Navbar>
   )
