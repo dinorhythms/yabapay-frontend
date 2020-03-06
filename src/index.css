@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.modal-backdrop.show {
+  opacity: .95;
+  background-color: #3D5872;
+}
+
+.modal-content {
+  background-color: #3d587200;
+  color: white;
+  text-align: center;
+  border: none;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-header .close {
+  color: white
+}
+
+.modal-body nav {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link {
+  color: white;
+}
+
+#auth-tab-login, #auth-tab-signup {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
