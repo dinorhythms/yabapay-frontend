@@ -22,7 +22,7 @@ export default function NavBar() {
           <Nav className="ml-auto mr-5">
             <Nav.Link as={Link} to="/about-us">About</Nav.Link>
             <Nav.Link as={Link} to="/features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
           <div>
             <Button variant="outline-primary" className="mr-2">Login</Button>
