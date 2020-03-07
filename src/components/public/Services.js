@@ -39,7 +39,7 @@ const Services = ({name}) => {
   return (
     <Row>
       <Service name="Buy Airtime" icon="phone" page="/airtime"/>
-      <Service name="Buy Data" icon="globe" page="/airtime"/>
+      <Service name="Buy Data" icon="globe" page="/data"/>
       <Service name="Pay Power Bills" icon="lightbulb-o" page="/airtime"/>
       <Service name="Pay Cable TV" icon="tv" page="/airtime"/>
       <Service name="Send Money" icon="money" page="/airtime"/>
