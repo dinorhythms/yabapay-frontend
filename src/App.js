@@ -13,6 +13,8 @@ import ContactPage from './screens/public/ContactPage';
 import AirtimePage from './screens/public/AirtimePage';
 import AirtimePayPage from './screens/public/AirtimePayPage';
 import NotFound from './screens/public/NotFound';
+import DataPage from './screens/public/DataPage';
+import DataPayPage from './screens/public/DataPayPage';
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
         <Route path="/features" component={FeaturesPage}/>
         <Route path="/contact" component={ContactPage}/>
         <Route exact path="/airtime" component={AirtimePage}/>
-        <Route path="/airtime/:provider" component={AirtimePayPage}/>
+        <Route exact path="/data" component={DataPage}/>
+        <Route exact path="/airtime/:provider" component={AirtimePayPage}/>
+        <Route exact path="/data/:provider" component={DataPayPage}/>
         <Route component={NotFound}/>
       </Switch>
       <NewsLetter/>
