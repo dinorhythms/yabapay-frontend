@@ -59,13 +59,13 @@ const ContactPage = () => {
               <Divider/>
               <h6 className="text-secondary mt-3 mb-5">Reach out to us for any inquiry</h6>
               <Form>
-                <Form.Group controlId="formBasicFullname">
+                <Form.Group controlId="contactFullname">
                   <Form.Control size="lg" type="email" placeholder="Enter full name" style={classes.inputs} />
                 </Form.Group>
-                <Form.Group controlId="formBasicEmail">
+                <Form.Group controlId="contactEmail">
                   <Form.Control size="lg" type="email" placeholder="Enter email" style={classes.inputs} />
                 </Form.Group>
-                <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Group controlId="contactMessage">
                   <Form.Control as="textarea" rows="7" defaultValue="Message" />
                 </Form.Group>
                 <Button variant="primary" size="lg" block type="submit" style={{backgroundColor: blue}}>

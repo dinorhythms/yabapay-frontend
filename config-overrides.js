@@ -3,16 +3,21 @@ const {
   override,
   addWebpackAlias,
   babelInclude,
-  addBabelPlugins
+  addBabelPlugins,
+  disableChunk,
+  removeModuleScopePlugin,
+  addBabelPresets
 } = require('customize-cra');
 
 module.exports = override(
+  ...addBabelPresets("@babel/preset-env", "@babel/preset-react"),
   addWebpackAlias({
     "react-native/Libraries/Renderer/shims/ReactNativePropRegistry": "react-native-web/dist/modules/ReactNativePropRegistry",
     "react-native": "react-native-web"
   }),
   babelInclude([
     path.resolve('src'),
+    path.resolve('node_modules/react-native'),
     path.resolve('node_modules/native-base-shoutem-theme'),
     path.resolve('node_modules/react-navigation'),
     path.resolve('node_modules/react-native-easy-grid'),
@@ -28,4 +33,6 @@ module.exports = override(
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-modules-commonjs"
   ),
+  disableChunk(),
+  removeModuleScopePlugin()
 );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Modal, Tabs, Tab } from "react-bootstrap";
 import Login from './Login';
 import Signup from './Signup';
@@ -6,6 +6,11 @@ import Signup from './Signup';
 const AuthModal = (props) => {
 
   const [key, setKey] = useState('login');
+  
+  useEffect(() => {
+    const { navkey } = props;
+    setKey(navkey)
+  }, [props, key])
 
   return (
     <Modal
