@@ -16,6 +16,12 @@ const classes = {
 export default function NavBar() {
 
   const [modalShow, setModalShow] = React.useState(false);
+  const [key, setKey] = React.useState('home');
+
+  const handleModal = (key) => {
+    setKey(key)
+    setModalShow(true)
+  }
 
   return (
     <Navbar expand="md" fixed="top" variant="light" bg="light" className="pt-3 pb-3">
@@ -29,12 +35,13 @@ export default function NavBar() {
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
           <div>
-            <Button variant="outline-primary" className="mr-2" onClick={() => setModalShow(true)}>Login</Button>
-            <Button variant="primary" style={classes.button}>Signup</Button>
+            <Button variant="outline-primary" className="mr-2" onClick={() => handleModal('login')}>Login</Button>
+            <Button variant="primary" style={classes.button} onClick={() => handleModal('signup')}>Signup</Button>
           </div>
         </Navbar.Collapse>
         <AuthModal
           show={modalShow}
+          navkey={key}
           onHide={() => setModalShow(false)}
         />
       </Container>

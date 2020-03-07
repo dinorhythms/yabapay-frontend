@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import { stylesColors } from '../../utils/publicVariables';
 
-const { white, blue} = stylesColors;
+const { blue } = stylesColors;
 
 const classes = {
   container: {
@@ -17,24 +17,24 @@ const Login = () => {
     <div style={classes.container}>
       <h6 className="mb-3">Welcome</h6>
       <Form>
-      <Form.Group controlId="formBasicEmail">
+      <Form.Group controlId="loginEmail">
         <Form.Control type="email" placeholder="Enter email" />
       </Form.Group>
 
-      <Form.Group controlId="formBasicPassword">
+      <Form.Group controlId="loginPassword">
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
 
       <p className="text-info">Forgot Password?</p>
 
-      <Form.Group controlId="formBasicCheckbox">
+      <Form.Group controlId="loginCheckbox">
         <Form.Check type="checkbox" label="Remember me" />
       </Form.Group>
       
       <Button variant="primary" type="submit" block>
         Submit
       </Button>
-      <p className="mt-3">OR</p>
+      <p className="mt-3">Login With</p>
       <Button variant="light" block>
       <Icon name="google" size={20} color={blue} className="mr-2" />
         Google
