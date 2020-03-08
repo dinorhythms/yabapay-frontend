@@ -16,6 +16,9 @@ const classes = {
 	},
 	footerLinks: {
 		fontSize: "0.9rem"
+	},
+	icons: {
+		marginRight: '1rem'
 	}
 };
 
@@ -109,20 +112,23 @@ const Footer = () => {
 						<Icon
 							name="facebook-square"
 							className="mr-3"
+							style={classes.icons}
 							size={30}
 							color={blue}
 						/>
-						<Icon name="twitter" className="mr-3" size={30} color={blue} />
+						<Icon name="twitter" className="mr-3" style={classes.icons} size={30} color={blue} />
 						<Icon
 							name="linkedin-square"
 							className="mr-3"
+							style={classes.icons}
 							size={30}
 							color={blue}
 						/>
-						<Icon name="instagram" className="mr-3" size={30} color={blue} />
+						<Icon name="instagram" style={classes.icons} className="mr-3" size={30} color={blue} />
 						<Icon
 							name="youtube-square"
 							className="mr-3"
+							style={classes.icons}
 							size={30}
 							color={blue}
 						/>

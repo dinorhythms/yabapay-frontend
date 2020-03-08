@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 import mtn from '../../assets/images/icons/mtn-data.png'
@@ -19,12 +19,17 @@ const classes = {
 const DataContent = ({icon, name, provider}) => (
   <Col xs={6} className="mb-4">
     <Card className="p-3" as={Link} to={`/data/${provider}`}>
-      <img src={icon} style={classes.icons} className="img-fluid mx-auto" alt={`${name} airtime`}/>
+      <img src={icon} style={classes.icons} className="img-fluid mx-auto" alt={`${name} data`}/>
     </Card>
   </Col>
 )
 
 const DataPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div style={{height: '4.2rem'}}/>

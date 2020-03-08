@@ -40,10 +40,10 @@ const Services = ({name}) => {
     <Row>
       <Service name="Buy Airtime" icon="phone" page="/airtime"/>
       <Service name="Buy Data" icon="globe" page="/data"/>
-      <Service name="Pay Power Bills" icon="lightbulb-o" page="/airtime"/>
-      <Service name="Pay Cable TV" icon="tv" page="/airtime"/>
-      <Service name="Send Money" icon="money" page="/airtime"/>
-      <Service name="More" icon="plus" page="/airtime"/>
+      <Service name="Pay Power Bills" icon="lightbulb-o" page="/power"/>
+      <Service name="Pay Cable TV" icon="tv" page="/cable"/>
+      <Service name="Send Money" icon="money" page="/transfer"/>
+      <Service name="More" icon="plus" page="/"/>
     </Row>
   )
 }

@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 import AppDownload from '../../components/public/AppDownload';
-
-import mtn from '../../assets/images/icons/mtn-airtime.png'
-import airtel from '../../assets/images/icons/airtel-airtime.png'
-import glo from '../../assets/images/icons/glo-airtime.png'
-import ninemobile from '../../assets/images/icons/9mobile-airtime.png'
 
 const AirtimePayPage = () => {
 
   const { provider } = useParams();
+  const { goBack } = useHistory();
+
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [amount, setAmount] = useState('');
@@ -22,6 +19,10 @@ const AirtimePayPage = () => {
       marginBottom: '0.3rem',
     }
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   
   return (
     <div>
@@ -30,20 +31,10 @@ const AirtimePayPage = () => {
         <Container>
           <Row>
             <Col xs={12} md={6}>
+              <Button onClick={() => goBack()} className="mb-3">Back</Button>
               <h6 className="text-secondary text-center text-md-left">AIRTIME TOPUP</h6>
               <h2 className="text-center text-md-left">
-                {provider === 'mtn'?(
-                <img src={mtn} style={classes.icons} className="img-fluid mx-auto" alt={`${provider} airtime`}/>
-                ):null}
-                {provider === 'airtel'?(
-                <img src={airtel} style={classes.icons} className="img-fluid mx-auto" alt={`${provider} airtime`}/>
-                ):null}
-                {provider === 'glo'?(
-                <img src={glo} style={classes.icons} className="img-fluid mx-auto" alt={`${provider} airtime`}/>
-                ):null}
-                {provider === '9mobile'?(
-                <img src={ninemobile} style={classes.icons} className="img-fluid mx-auto" alt={`${provider} airtime`}/>
-                ):null}
+                <img src={require(`../../assets/images/icons/${provider}-airtime.png`)} style={classes.icons} className="img-fluid mx-auto" alt={`${provider} airtime`}/>
                 <span className="text-capitalize ml-2">
                   {provider}
                 </span> Airtime Topup</h2>

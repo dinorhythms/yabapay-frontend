@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import { Card, Col, Container, Row } from "react-bootstrap";
 // import Icon from "react-native-vector-icons/FontAwesome";
 // import bg2 from "../../assets/images/bg/bg_features.jpg";
@@ -18,6 +18,11 @@ import FeatureSection from "../../components/public/FeatureSection";
 // }
 
 export default function FeaturesPage() {
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<>
 			<PageHeader rootPage="Home" currentPage="Our Features" bg={bg} />

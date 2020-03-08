@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import AppDownload from '../../components/public/AppDownload';
@@ -8,6 +8,11 @@ import CoreValues from '../../components/public/CoreValues';
 import bg from '../../assets/images/bg/bg_header.jpg';
 
 const AboutUs = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <PageHeader rootPage="Home" currentPage="About Us" bg={bg}/>
