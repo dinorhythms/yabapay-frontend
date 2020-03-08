@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 import mtn from '../../assets/images/icons/mtn-airtime.png'
@@ -25,6 +25,11 @@ const AirtimeContent = ({icon, name, provider}) => (
 )
 
 const AirtimePage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div style={{height: '4.2rem'}}/>

@@ -4,10 +4,14 @@ import { useParams, useHistory } from "react-router-dom";
 
 import AppDownload from "../../components/public/AppDownload";
 
-const DataPayPage = () => {
-	const { provider } = useParams();
-	const { goBack } = useHistory();
+const PowerPayPage = () => {
 
+  const { provider } = useParams();
+  const { goBack } = useHistory();
+
+	const [meterType, setMeterType] = useState("");
+	const [meterNumber, setMeterNumber] = useState("");
+	const [customer, setCustomer] = useState("");
 	const [phone, setPhone] = useState("");
 	const [email, setEmail] = useState("");
 	const [amount, setAmount] = useState("");
@@ -17,11 +21,11 @@ const DataPayPage = () => {
 			width: "1.5rem",
 			marginBottom: "0.3rem"
 		}
-	};
-
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
+  };
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 	return (
 		<div>
@@ -30,51 +34,71 @@ const DataPayPage = () => {
 				<Container>
 					<Row>
 						<Col xs={12} md={6}>
-							<Button onClick={() => goBack()} className="mb-3">Back</Button>
+              <Button onClick={() => goBack()} className="mb-3">Back</Button>
 							<h6 className="text-secondary text-center text-md-left">
-								DATA TOPUP
+								POWER BILL
 							</h6>
 							<h2 className="text-center text-md-left">
-								<img
-									src={require(`../../assets/images/icons/${provider}-data.png`)}
-									style={classes.icons}
-									className="img-fluid mx-auto"
-									alt={`${provider} data`}
-								/>
-								<span className="text-capitalize ml-2">{provider}</span> Data
-								Topup
+                <img
+                  src={require(`../../assets/images/icons/${provider}-electricity.png`)}
+                  style={classes.icons}
+                  className="img-fluid mx-auto"
+                  alt={`${provider} electricity`}
+                />
+								<span className="text-capitalize ml-2">{provider}</span> Power 
+								Bill Payment
 							</h2>
 							<hr />
 							<Row className="mt-4">
 								<Col xs={12} md={12}>
 									<Form>
-                    <Form.Group controlId="exampleForm.ControlSelect1">
-                      <Form.Label>Pick Data Plan</Form.Label>
-                      <Form.Control as="select" onChange={(e) => setAmount(e.target.value)}>
-                        <option value="50">10MB at N50 for 1 Day</option>
-                        <option value="100">50MB at N100 for 1 Day</option>
-                        <option value="200">200MB at N200 for 3 Days</option>
-                        <option value="300">350MB at N300 for 7 Days</option>
-                        <option value="500">750MB at N500 for 14 Days</option>
-                      </Form.Control>
-                    </Form.Group>
+										<Form.Group controlId="exampleForm.ControlSelect1">
+											<Form.Label>Pick Meter Type</Form.Label>
+											<Form.Control
+												as="select"
+												onChange={e => setMeterType(e.target.value)}>
+												<option value="">-- Select Type --</option>
+												<option value="prepaid">Prepaid</option>
+												<option value="postpaid">Postpaid</option>
+											</Form.Control>
+										</Form.Group>
+
 										<Form.Row>
 											<Form.Group as={Col} controlId="phone">
-												<Form.Label>Phone</Form.Label>
+												<Form.Label>Meter Number</Form.Label>
 												<Form.Control
-                          type="phone"
-													onChange={e => setPhone(e.target.value)}
-													placeholder="Enter Phone"
+													type="number"
+													onChange={e => setMeterNumber(e.target.value)}
+													placeholder="Enter Meter Number"
 												/>
 											</Form.Group>
 											<Form.Group as={Col} controlId="amount">
 												<Form.Label>Amount</Form.Label>
 												<Form.Control
-                          type="text"
-                          disabled
-                          defaultValue={amount}
+													type="text"
+													defaultValue={amount}
 													onChange={e => setAmount(e.target.value)}
 													placeholder="Enter Amount"
+												/>
+											</Form.Group>
+										</Form.Row>
+
+                    <Form.Row>
+											<Form.Group as={Col} controlId="phone">
+												<Form.Label>Phone</Form.Label>
+												<Form.Control
+													type="tel"
+													onChange={e => setPhone(e.target.value)}
+													placeholder="Enter Phone"
+												/>
+											</Form.Group>
+											<Form.Group as={Col} controlId="amount">
+												<Form.Label>Customer Name</Form.Label>
+												<Form.Control
+													type="text"
+													defaultValue={amount}
+													onChange={e => setCustomer(e.target.value)}
+													placeholder="Enter Customer Name"
 												/>
 											</Form.Group>
 										</Form.Row>
@@ -105,18 +129,30 @@ const DataPayPage = () => {
 							</h6>
 							<h2 className="text-center text-md-left">Order Summary</h2>
 							<hr />
-							<Card className="p-3">
+							<Card className="p-3 text-capitalize">
 								<Row className="mb-3">
 									<Col>Service:</Col>
-									<Col className="text-right">Data</Col>
+									<Col className="text-right">Power</Col>
+								</Row>
+                <Row className="mb-3">
+									<Col>Provider:</Col>
+									<Col className="text-right text-capitalize">{provider}</Col>
+								</Row>
+                <Row className="mb-3">
+									<Col>Meter Type:</Col>
+									<Col className="text-right">{meterType || "Required"}</Col>
+								</Row>
+                <Row className="mb-3">
+									<Col>Meter Number:</Col>
+									<Col className="text-right">{meterNumber || "Required"}</Col>
+								</Row>
+                <Row className="mb-3">
+									<Col>Customer Name:</Col>
+									<Col className="text-right">{customer || "Required"}</Col>
 								</Row>
 								<Row className="mb-3">
 									<Col>Phone:</Col>
 									<Col className="text-right">{phone || "Required"}</Col>
-								</Row>
-								<Row className="mb-3">
-									<Col>Provider:</Col>
-									<Col className="text-right text-capitalize">{provider}</Col>
 								</Row>
 								<Row className="mb-3">
 									<Col>Email:</Col>
@@ -161,4 +197,4 @@ const DataPayPage = () => {
 	);
 };
 
-export default DataPayPage;
+export default PowerPayPage;

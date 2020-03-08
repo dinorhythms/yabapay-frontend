@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Form, Col, Container, Row, Button } from "react-bootstrap";
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -25,6 +25,11 @@ const classes = {
 const { blue } = stylesColors;
 
 const ContactPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div>
       <PageHeader rootPage="Home" currentPage="Contact Us" bg={bg} />
