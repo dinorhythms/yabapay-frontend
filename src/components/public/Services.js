@@ -42,7 +42,7 @@ const Services = ({name}) => {
       <Service name="Buy Data" icon="globe" page="/data"/>
       <Service name="Pay Power Bills" icon="lightbulb-o" page="/power"/>
       <Service name="Pay Cable TV" icon="tv" page="/cable"/>
-      <Service name="Send Money" icon="money" page="/transfer"/>
+      <Service name="Send Money" icon="money" page="/"/>
       <Service name="More" icon="plus" page="/"/>
     </Row>
   )
