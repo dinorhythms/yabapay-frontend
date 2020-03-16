@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { useHistory, useParams } from "react-router-dom";
-import AppDownload from "../../components/public/AppDownload";
 
 const CablePayPage = () => {
 	const { provider } = useParams();
@@ -53,7 +52,7 @@ const CablePayPage = () => {
 								<Col xs={12} md={12}>
 									<Form>
 										<Form.Group controlId="exampleForm.ControlSelect1">
-											<Form.Label>Pick Meter Type</Form.Label>
+											<Form.Label>Bouquet</Form.Label>
 											<Form.Control
 												as="select"
 												onChange={e => setBouquet(e.target.value)}>
@@ -195,7 +194,6 @@ const CablePayPage = () => {
 					</Row>
 				</Container>
 			</section>
-			<AppDownload />
 		</div>
 	);
 };

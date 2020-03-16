@@ -37,7 +37,7 @@ const Service = ({ name, icon, page }) => (
 const Services = ({name}) => {
 
   return (
-    <Row>
+    <Row className="my-auto">
       <Service name="Buy Airtime" icon="phone" page="/airtime"/>
       <Service name="Buy Data" icon="globe" page="/data"/>
       <Service name="Pay Power Bills" icon="lightbulb-o" page="/power"/>
