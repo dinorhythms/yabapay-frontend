@@ -2,16 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
-import { stylesColors } from '../../utils/publicVariables';
 import AuthModal from './AuthModal';
-
-const { blue } = stylesColors;
-
-const classes = {
-  button: {
-    backgroundColor: blue
-  }
-}
 
 export default function NavBar() {
 
@@ -24,19 +15,24 @@ export default function NavBar() {
   }
 
   return (
-    <Navbar expand="md" fixed="top" variant="light" bg="light" className="pt-3 pb-3">
+    <Navbar expand="md" fixed="top" bg="light" variant="light" className="pt-3 pb-3">
       <Container>
         <Navbar.Brand as={Link} to="/">YabaPay</Navbar.Brand>
+        <div className="d-block d-md-none">
+          <Button variant="light" onClick={() => handleModal('login')}>Login</Button>
+          <Button variant="warning ml-4" className="pl-4 pr-4" onClick={() => handleModal('signup')}>Signup</Button>
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto mr-5">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about-us">About</Nav.Link>
             <Nav.Link as={Link} to="/features">Features</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
-          <div>
-            <Button variant="outline-primary" className="mr-2" onClick={() => handleModal('login')}>Login</Button>
-            <Button variant="primary" style={classes.button} onClick={() => handleModal('signup')}>Signup</Button>
+          <div className="d-none d-md-block">
+            <Button variant="light" onClick={() => handleModal('login')}>Login</Button>
+            <Button variant="warning ml-4" className="pl-4 pr-4" onClick={() => handleModal('signup')}>Signup</Button>
           </div>
         </Navbar.Collapse>
         <AuthModal

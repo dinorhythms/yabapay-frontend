@@ -9,7 +9,6 @@ import jos from "../../assets/images/icons/jos-electricity.png";
 import kano from "../../assets/images/icons/kano-electricity.png";
 import phed from "../../assets/images/icons/phed-electricity.png";
 
-import AppDownload from "../../components/public/AppDownload";
 import Services from "../../components/public/Services";
 
 const classes = {
@@ -75,7 +74,6 @@ const PowerPage = () => {
 					</Row>
 				</Container>
 			</section>
-			<AppDownload />
 		</>
 	);
 };

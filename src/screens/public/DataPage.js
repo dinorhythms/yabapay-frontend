@@ -7,7 +7,6 @@ import glo from '../../assets/images/icons/glo-data.png'
 import ninemobile from '../../assets/images/icons/9mobile-data.png'
 import { Link } from 'react-router-dom';
 
-import AppDownload from '../../components/public/AppDownload';
 import Services from '../../components/public/Services';
 
 const classes = {
@@ -58,7 +57,6 @@ const DataPage = () => {
           </Row>
         </Container>
       </section>
-      <AppDownload/>
     </>
   )
 }

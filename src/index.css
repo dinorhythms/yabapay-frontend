@@ -13,7 +13,7 @@ code {
 }
 
 .modal-backdrop.show {
-  opacity: .95;
+  opacity: .85;
   background-color: #3D5872;
 }
 

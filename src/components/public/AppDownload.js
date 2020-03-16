@@ -7,11 +7,11 @@ import mobileapp from '../../assets/images/mobile-app.png';
 
 import { stylesColors } from '../../utils/publicVariables';
 
-const { grey } = stylesColors;
+const { white } = stylesColors;
 
 const classes = {
   container: {
-    backgroundColor: grey
+    backgroundColor: white
   },
   imageBox: {
     height: '20rem',

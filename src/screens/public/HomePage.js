@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 
-import QuickSearch from '../../components/public/QuickSearch';
 import QuickServices from '../../components/public/QuickServices';
-import FeatureProducts from '../../components/public/FeatureProducts';
-import HowDoesItWork from '../../components/public/HowDoesItWork';
 import AppDownload from '../../components/public/AppDownload';
+import Features from '../../components/public/Features';
 
  const HomePage = () => {
 
@@ -14,10 +12,8 @@ import AppDownload from '../../components/public/AppDownload';
 
   return (
     <>
-      <QuickSearch/>
       <QuickServices/>
-      <FeatureProducts/>
-      <HowDoesItWork/>
+      <Features/>
       <AppDownload/>
     </>
   )

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { useParams, useHistory } from "react-router-dom";
 
-import AppDownload from "../../components/public/AppDownload";
-
 const PowerPayPage = () => {
 
   const { provider } = useParams();
@@ -192,7 +190,6 @@ const PowerPayPage = () => {
 					</Row>
 				</Container>
 			</section>
-			<AppDownload />
 		</div>
 	);
 };
