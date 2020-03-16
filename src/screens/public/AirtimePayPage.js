@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import { useParams, useHistory } from 'react-router-dom';
 
-import AppDownload from '../../components/public/AppDownload';
-
 const AirtimePayPage = () => {
 
   const { provider } = useParams();
@@ -113,7 +111,6 @@ const AirtimePayPage = () => {
           </Row>
         </Container>
       </section>
-      <AppDownload/>
     </div>
   )
 }

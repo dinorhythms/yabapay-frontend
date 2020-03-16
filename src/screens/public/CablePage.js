@@ -6,7 +6,6 @@ import dstv from "../../assets/images/icons/dstv-cable.png";
 import gotv from "../../assets/images/icons/gotv-cable.png";
 import startimes from "../../assets/images/icons/startimes-cable.png";
 
-import AppDownload from "../../components/public/AppDownload";
 import Services from "../../components/public/Services";
 
 const classes = {
@@ -66,7 +65,6 @@ const CablePage = () => {
 					</Row>
 				</Container>
 			</section>
-			<AppDownload />
 		</>
 	);
 };

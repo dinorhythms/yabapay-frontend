@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { useParams, useHistory } from "react-router-dom";
 
-import AppDownload from "../../components/public/AppDownload";
-
 const DataPayPage = () => {
 	const { provider } = useParams();
 	const { goBack } = useHistory();
@@ -156,7 +154,6 @@ const DataPayPage = () => {
 					</Row>
 				</Container>
 			</section>
-			<AppDownload />
 		</div>
 	);
 };

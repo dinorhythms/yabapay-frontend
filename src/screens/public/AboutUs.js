@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import AppDownload from '../../components/public/AppDownload';
 import PageHeader from '../../components/public/PageHeader';
 import CoreValues from '../../components/public/CoreValues';
 
@@ -64,7 +63,6 @@ const AboutUs = () => {
         </Container>
       </section>
       <CoreValues/>
-      <AppDownload/>
     </>
   )
 }

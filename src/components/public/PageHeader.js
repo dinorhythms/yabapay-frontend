@@ -16,12 +16,12 @@ const getStyles = (bg) => {
   }
 }
 
-const PageHeader = ({ currentPage, rootPage, bg }) => {
+const PageHeader = ({ currentPage, rootPage, bg, headerImage }) => {
   return (
     <div style={getStyles(bg)}>
       <Container className="h-100">
         <Row className="h-100">
-          <Col xs={12} className="my-auto">
+          <Col xs={12} md={12} className="my-auto">
             <h1>{currentPage}</h1>
             <h6 className="text-warning">{rootPage} > {currentPage}</h6>
           </Col>
