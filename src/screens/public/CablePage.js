@@ -43,7 +43,7 @@ const CablePage = () => {
 								CABLE SUBSCRIPTION
 							</h6>
 							<h2 className="text-center text-md-left">
-								Dstv Payment
+								Cable TV Payment
 							</h2>
 							<hr />
 							<Row className="mt-4">

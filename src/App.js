@@ -27,6 +27,8 @@ import BuyData from "./screens/customers/BuyData";
 import PayData from "./screens/customers/PayData";
 import BuyPower from "./screens/customers/BuyPower";
 import PayPower from "./screens/customers/PayPower";
+import BuyCable from "./screens/customers/BuyCable";
+import PayCable from "./screens/customers/PayCable";
 
 function App(props) {
 	return (
@@ -101,6 +103,20 @@ function App(props) {
 					exact={true}
 					path="/users/power/:provider"
 					component={PayPower}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/cable"
+					component={BuyCable}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/cable/:provider"
+					component={PayCable}
 					Layout={CustomerLayout}
 					{...props}
 				/>
