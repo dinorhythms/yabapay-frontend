@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 import './sideBar.css';
 
@@ -19,21 +20,25 @@ import './sideBar.css';
   // }
 
   return (
-    <Col xs={12} md={2} className="pl-0 SideNav d-none d-sm-block">
+    <Col xs={12} md={2} className="SideNav d-none d-sm-block">
       <div id="mySidenav">
         <Nav defaultActiveKey="/home" className="flex-column">
-          <h6 className="ml-3" style={{color: 'rgb(255, 128, 0)'}}>Tunmi Williams <br/> <small>Last Login: 2 Days Ago </small></h6>
+          <div className="d-flex pl-3 mb-3">
+            <Icon name="user-circle" size={35} color="black" />
+            <h6 className="ml-3" style={{color: 'rgb(255, 128, 0)'}}>Tunmi Williams <br/> <small>Last Login: 2 Days Ago </small></h6>
+          </div>
+          
           <Nav.Link as={Link} to="/users" >Dashboard</Nav.Link>
           <Nav.Link eventKey="link-2">Fund Wallet</Nav.Link>
           <Nav.Link as={Link} to="/users/transactions">Transactions</Nav.Link>
           <Nav.Link eventKey="link-1">Profile</Nav.Link>
           <hr/>
-          <h6 className="ml-3" style={{color: 'rgb(255, 128, 0)'}}>Services</h6>
+          <h6 className="ml-3 text-dark">Services</h6>
           <Nav.Link as={Link} to="/users/airtime" eventKey="link-2">Buy Airtime</Nav.Link>
           <Nav.Link as={Link} to="/users/data" eventKey="link-1">Buy Data</Nav.Link>
-          <Nav.Link href="/home">Pay Power Bill</Nav.Link>
-          <Nav.Link eventKey="link-2">Cable TV</Nav.Link>
-          <Nav.Link href="/home">Buy Ticket</Nav.Link>
+          <Nav.Link as={Link} to="/users/power">Pay Power Bill</Nav.Link>
+          <Nav.Link as={Link} to="/users/cable">Cable TV</Nav.Link>
+          <Nav.Link as={Link} to="/users/ticket">Buy Ticket</Nav.Link>
         </Nav>
       </div>
     </Col>

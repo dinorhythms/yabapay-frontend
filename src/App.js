@@ -25,6 +25,8 @@ import PayAirtime from "./screens/customers/PayAirtime";
 import Transaction from "./screens/customers/Transactions";
 import BuyData from "./screens/customers/BuyData";
 import PayData from "./screens/customers/PayData";
+import BuyPower from "./screens/customers/BuyPower";
+import PayPower from "./screens/customers/PayPower";
 
 function App(props) {
 	return (
@@ -85,6 +87,20 @@ function App(props) {
 					exact={true}
 					path="/users/data/:provider"
 					component={PayData}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/power"
+					component={BuyPower}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/power/:provider"
+					component={PayPower}
 					Layout={CustomerLayout}
 					{...props}
 				/>

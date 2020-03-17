@@ -4,15 +4,30 @@
     position: sticky;
     top: 4rem;
     z-index: 1000;
-    height: calc(100vh - 4rem);
-    background-color: #001D3A;
+    height: calc(100vh - 3rem);
+    background-color: #f7f7f7;
+    /* background-color: #001D3A; */
     border-right: 1px solid #ececec;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+}
+
 .nav a {
-  color: #ffffff;
+  color: #212529;
+  /* color: #999; */
+  font-size: 90%;
+}
+
+.nav a:hover {
+  color: #999;
+  font-size: 90%;
 }
