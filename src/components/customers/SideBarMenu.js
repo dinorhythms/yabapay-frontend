@@ -38,7 +38,7 @@ import './sideBar.css';
           <Nav.Link as={Link} to="/users/data" eventKey="link-1">Buy Data</Nav.Link>
           <Nav.Link as={Link} to="/users/power">Pay Power Bill</Nav.Link>
           <Nav.Link as={Link} to="/users/cable">Cable TV</Nav.Link>
-          <Nav.Link as={Link} to="/users/ticket">Buy Ticket</Nav.Link>
+          <Nav.Link as={Link} to="/users/">Buy Ticket</Nav.Link>
         </Nav>
       </div>
     </Col>
