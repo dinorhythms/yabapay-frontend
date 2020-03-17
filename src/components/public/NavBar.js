@@ -4,6 +4,17 @@ import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 import AuthModal from './AuthModal';
 
+import { stylesColors } from '../../utils/publicVariables';
+
+const { blue } = stylesColors;
+
+const classes = {
+  button: {
+    backgroundColor: blue,
+    color: '#ffffff'
+  },
+}
+
 export default function NavBar() {
 
   const [modalShow, setModalShow] = React.useState(false);
@@ -32,7 +43,7 @@ export default function NavBar() {
           </Nav>
           <div className="d-none d-md-block">
             <Button variant="light" onClick={() => handleModal('login')}>Login</Button>
-            <Button variant="warning ml-4" className="pl-4 pr-4" onClick={() => handleModal('signup')}>Signup</Button>
+            <Button variant="ml-4" style={classes.button} className="pl-4 pr-4" onClick={() => handleModal('signup')}>Signup</Button>
           </div>
         </Navbar.Collapse>
         <AuthModal

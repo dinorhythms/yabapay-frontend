@@ -7,7 +7,7 @@ import bg from '../../assets/images/bg/hero_bg.svg';
 import { stylesColors } from '../../utils/publicVariables';
 import Services from './Services';
 
-const { blue, white } = stylesColors;
+const { blue, white, yellow } = stylesColors;
 
 const classes = {
   container: {
@@ -21,7 +21,9 @@ const classes = {
     paddingRight: '3rem',
     paddingLeft: '3rem',
     paddingTop: '0.6rem',
-    paddingBottom: '0.6rem'
+    paddingBottom: '0.6rem',
+    backgroundColor: yellow,
+    color: '#ffffff'
   }
 }
 

@@ -5,9 +5,13 @@ import { Link } from 'react-router-dom';
 
 import features from '../../assets/images/hero-feature.png'
 
-const classes = {
-  container: {
+import { stylesColors } from '../../utils/publicVariables';
 
+const { yellow } = stylesColors;
+
+const classes = {
+  button: {
+    backgroundColor: yellow
   },
   squareBox: {
     color: 'linear-gradient(0deg, rgba(92,1,255,1) 52%, rgba(132,68,224,1) 100%)',
@@ -44,7 +48,7 @@ const BoxServices = () => {
       </Row>
       <Row>
         <Col className="mt-3 text-right">
-          <Button variant="warning">More</Button>
+          <Button variant="warning" style={classes.button}>More</Button>
         </Col>
       </Row>
       <Row>

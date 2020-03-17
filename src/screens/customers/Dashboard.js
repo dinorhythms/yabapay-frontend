@@ -6,6 +6,17 @@ import CompletedTransactions from '../../components/customers/CompletedTransacti
 import InitiatedTransactions from '../../components/customers/InitiatedTransactions';
 import FailedTransactions from '../../components/customers/FailedTransactions';
 
+import { stylesColors } from '../../utils/publicVariables';
+
+const { yellow } = stylesColors;
+
+const classes = {
+  button: {
+    backgroundColor: yellow,
+    // color: '$ffffff'
+  },
+}
+
 export default function Dashboard() {
 
   const [key, setKey] = React.useState('all');
@@ -24,7 +35,7 @@ export default function Dashboard() {
               <div className="my-auto">
                 <ButtonGroup aria-label="Basic example">
                   <Button variant="light">Send</Button>
-                  <Button variant="warning">Top-up</Button>
+                  <Button style={classes.button}>Top-up</Button>
                 </ButtonGroup>
               </div>
             </Card.Body>

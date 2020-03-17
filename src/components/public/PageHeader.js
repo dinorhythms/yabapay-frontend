@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import { stylesColors } from '../../utils/publicVariables';
 
-const { blue, white } = stylesColors;
+const { blue, white, yellow } = stylesColors;
 
 const getStyles = (bg) => {
   return {
@@ -23,7 +23,7 @@ const PageHeader = ({ currentPage, rootPage, bg, headerImage }) => {
         <Row className="h-100">
           <Col xs={12} md={12} className="my-auto">
             <h1>{currentPage}</h1>
-            <h6 className="text-warning">{rootPage} > {currentPage}</h6>
+            <h6 style={{color: `${yellow}`}}>{rootPage} > {currentPage}</h6>
           </Col>
         </Row>
       </Container>

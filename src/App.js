@@ -23,6 +23,8 @@ import PublicRoute from "./services/PublicRoute";
 import BuyAirtime from "./screens/customers/BuyAirtime";
 import PayAirtime from "./screens/customers/PayAirtime";
 import Transaction from "./screens/customers/Transactions";
+import BuyData from "./screens/customers/BuyData";
+import PayData from "./screens/customers/PayData";
 
 function App(props) {
 	return (
@@ -69,6 +71,20 @@ function App(props) {
 					exact={true}
 					path="/users/transactions"
 					component={Transaction}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/data"
+					component={BuyData}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/data/:provider"
+					component={PayData}
 					Layout={CustomerLayout}
 					{...props}
 				/>
