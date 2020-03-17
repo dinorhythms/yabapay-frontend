@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Card, Col, Row, Button, Form } from "react-bootstrap";
 import { useParams, useHistory } from 'react-router-dom';
 
-import "./dashboard.css";
-
 const PayAirtime = () => {
 
   const { provider } = useParams();

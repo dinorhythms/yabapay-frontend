@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 export default function NavBarMenu() {
   return (
-    <Navbar fixed="top" bg="light" expand="lg">
+    <Navbar fixed="top" bg="primary" variant="dark" className="text-white" expand="lg">
       <Navbar.Brand href="#home">Yabapay</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
