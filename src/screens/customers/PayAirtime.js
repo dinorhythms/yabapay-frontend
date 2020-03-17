@@ -71,7 +71,7 @@ const PayAirtime = () => {
             <h2 className="text-center text-md-left">Order Summary</h2>
             <hr/>
             <Card className="p-3">
-              <Row className="mb-3">
+              <Row className="mb-3 mt-2">
                 <Col>Service:</Col>
                 <Col className="text-right">Airtime</Col>
               </Row>
@@ -109,7 +109,7 @@ const PayAirtime = () => {
                   </div>
                 </Col>
               </Row>
-              <Button variant="primary" className="mt-4 mb-5" type="submit" block>
+              <Button variant="primary" className="mt-4 mb-3" type="submit" block>
                 Process now
               </Button>
             </Card>

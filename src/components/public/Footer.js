@@ -5,7 +5,7 @@ import appstore from "../../assets/images/app-store-badge.jpg";
 import playstore from "../../assets/images/google-play-badge.jpg";
 import { stylesColors } from "../../utils/publicVariables";
 
-const { grey, grey2 } = stylesColors;
+const { grey, grey2, yellow } = stylesColors;
 
 const classes = {
 	container: {
@@ -19,6 +19,10 @@ const classes = {
 	},
 	icons: {
 		marginRight: '1rem'
+	},
+	button: {
+		backgroundColor: yellow,
+		color: '#ffffff'
 	}
 };
 
