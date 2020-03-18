@@ -14,6 +14,7 @@ const classes = {
 const Signup = () => {
 	return (
 		<div style={classes.container}>
+			<h2 className="mb-3">Signup</h2>
 			<h6 className="mb-3">Register to get started</h6>
 			<Form>
 				<Form.Group controlId="signupEmail">
@@ -31,17 +32,20 @@ const Signup = () => {
         <Form.Group controlId="signupConfirmPassword">
 					<Form.Control type="password" placeholder="Confirm Password" />
 				</Form.Group>
-
+				<Form.Group controlId="loginCheckbox" className="text-left">
+          <Form.Check type="checkbox" label="I accept the terms and conditions for using this service, and hereby confirm I have read the privacy policy." />
+        </Form.Group>
+				<p></p>
 				<Button variant="primary" type="submit" block>
 					Signup
 				</Button>
-				<p className="mt-3">SignUp With</p>
+				<p className="mt-3">Signup With</p>
 				<Button variant="light" block>
-					<Icon name="google" size={20} color={blue} className="mr-2" />
+					<Icon name="google" size={20} color={blue} className="mr-2" />{" "}
 					Google
 				</Button>
 				<Button variant="light" block>
-					<Icon name="facebook" size={20} color={blue} className="mr-2" />
+					<Icon name="facebook" size={20} color={blue} className="mr-2" />{" "}
 					Facebook
 				</Button>
 			</Form>

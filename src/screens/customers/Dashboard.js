@@ -7,6 +7,7 @@ import InitiatedTransactions from '../../components/customers/InitiatedTransacti
 import FailedTransactions from '../../components/customers/FailedTransactions';
 
 import { stylesColors } from '../../utils/publicVariables';
+import { Link } from 'react-router-dom';
 
 const { yellow } = stylesColors;
 
@@ -35,7 +36,7 @@ export default function Dashboard() {
               <div className="my-auto">
                 <ButtonGroup aria-label="Basic example">
                   <Button variant="light">Send</Button>
-                  <Button style={classes.button}>Top-up</Button>
+                  <Button as={Link} to="/users/fund-wallet" style={classes.button}>Top-up</Button>
                 </ButtonGroup>
               </div>
             </Card.Body>

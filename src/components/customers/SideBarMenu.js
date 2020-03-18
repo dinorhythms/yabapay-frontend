@@ -29,7 +29,7 @@ import './sideBar.css';
           </div>
           
           <Nav.Link as={Link} to="/users" >Dashboard</Nav.Link>
-          <Nav.Link eventKey="link-2">Fund Wallet</Nav.Link>
+          <Nav.Link as={Link} to="/users/fund-wallet">Fund Wallet</Nav.Link>
           <Nav.Link as={Link} to="/users/transactions">Transactions</Nav.Link>
           <Nav.Link eventKey="link-1">Profile</Nav.Link>
           <hr/>
