@@ -29,6 +29,7 @@ import BuyPower from "./screens/customers/BuyPower";
 import PayPower from "./screens/customers/PayPower";
 import BuyCable from "./screens/customers/BuyCable";
 import PayCable from "./screens/customers/PayCable";
+import FundWallet from "./screens/customers/FundWallet";
 
 function App(props) {
 	return (
@@ -117,6 +118,13 @@ function App(props) {
 					exact={true}
 					path="/users/cable/:provider"
 					component={PayCable}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/fund-wallet"
+					component={FundWallet}
 					Layout={CustomerLayout}
 					{...props}
 				/>
