@@ -31,7 +31,7 @@ import './sideBar.css';
           <Nav.Link as={Link} to="/users" >Dashboard</Nav.Link>
           <Nav.Link as={Link} to="/users/fund-wallet">Fund Wallet</Nav.Link>
           <Nav.Link as={Link} to="/users/transactions">Transactions</Nav.Link>
-          <Nav.Link eventKey="link-1">Profile</Nav.Link>
+          <Nav.Link as={Link} to="/users/profile">Profile</Nav.Link>
           <hr/>
           <h6 className="ml-3 text-dark">Services</h6>
           <Nav.Link as={Link} to="/users/airtime" eventKey="link-2">Buy Airtime</Nav.Link>
