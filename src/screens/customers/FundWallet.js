@@ -5,13 +5,6 @@ const FundWallet = () => {
 
 	const [amount, setAmount] = useState("");
 
-	const classes = {
-		icons: {
-			width: "1.5rem",
-			marginBottom: "0.3rem"
-		}
-	};
-
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
