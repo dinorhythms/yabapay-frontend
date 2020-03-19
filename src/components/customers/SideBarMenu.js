@@ -28,17 +28,18 @@ import './sideBar.css';
             <h6 className="ml-3" style={{color: 'rgb(255, 128, 0)'}}>Tunmi Williams <br/> <small>Last Login: 2 Days Ago </small></h6>
           </div>
           
-          <Nav.Link as={Link} to="/users" >Dashboard</Nav.Link>
-          <Nav.Link as={Link} to="/users/fund-wallet">Fund Wallet</Nav.Link>
-          <Nav.Link as={Link} to="/users/transactions">Transactions</Nav.Link>
-          <Nav.Link as={Link} to="/users/profile">Profile</Nav.Link>
+          <Nav.Link as={Link} to="/users" ><Icon name="dashboard" size={15} color="black" /> Dashboard</Nav.Link>
+          <Nav.Link as={Link} to="/users/fund-wallet"><Icon name="arrow-circle-right" size={15} color="black" /> Fund Wallet</Nav.Link>
+          <Nav.Link as={Link} to="/users/transactions"><Icon name="transgender-alt" size={15} color="black" /> Transactions</Nav.Link>
+          <Nav.Link as={Link} to="/users/profile"><Icon name="user-circle" size={15} color="black" /> Profile</Nav.Link>
+          <Nav.Link as={Link} to="/users/beneficiaries"><Icon name="address-book" size={15} color="black" /> Beneficiaries</Nav.Link>
           <hr/>
           <h6 className="ml-3 text-dark">Services</h6>
-          <Nav.Link as={Link} to="/users/airtime" eventKey="link-2">Buy Airtime</Nav.Link>
-          <Nav.Link as={Link} to="/users/data" eventKey="link-1">Buy Data</Nav.Link>
-          <Nav.Link as={Link} to="/users/power">Pay Power Bill</Nav.Link>
-          <Nav.Link as={Link} to="/users/cable">Cable TV</Nav.Link>
-          <Nav.Link as={Link} to="/users/">Buy Ticket</Nav.Link>
+          <Nav.Link as={Link} to="/users/airtime" eventKey="link-2"><Icon name="phone-square" size={15} color="black" /> Buy Airtime</Nav.Link>
+          <Nav.Link as={Link} to="/users/data" eventKey="link-1"><Icon name="globe" size={15} color="black" /> Buy Data</Nav.Link>
+          <Nav.Link as={Link} to="/users/power"><Icon name="power-off" size={15} color="black" /> Pay Power Bill</Nav.Link>
+          <Nav.Link as={Link} to="/users/cable"><Icon name="tv" size={15} color="black" /> Cable TV</Nav.Link>
+          <Nav.Link as={Link} to="/users/"><Icon name="plane" size={15} color="black" /> Buy Ticket</Nav.Link>
         </Nav>
       </div>
     </Col>
