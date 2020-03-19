@@ -6,51 +6,49 @@ import "./dashboard.css";
 export default function Beneficiaries() {
 
 	return (
-		<>
-			<h3 className="mb-3">Beneficiaries</h3>
-
+		<div className="pt-2 pb-5">
+      <h6 className="text-secondary text-center text-md-left">
+				Beneficiaries
+			</h6>
+			<h2 className="mb-3 text-center text-md-left">All saved Beneficiaries</h2>
 			<Row className="mt-2">
 				<Col>
           <Table striped responsive hover>
             <thead>
               <tr>
                 <th>#</th>
+                <th>ref</th>
                 <th>Date</th>
-                <th>Name</th>
-                <th>Service</th>
-                <th>Biller</th>
-                <th>Ref</th>
+                <th>Amount</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
+                <td>#1656466664663133</td>
                 <td>01-02-2020</td>
-                <td>Ola</td>
-                <td>Airtime</td>
-                <td>Mtn</td>
-                <td>08022835496</td>
+                <td>N5000</td>
+                <td>completed</td>
               </tr>
               <tr>
-                <td>2</td>
+                <td>1</td>
+                <td>#1656466664663133</td>
                 <td>01-02-2020</td>
-                <td>Ola Glo</td>
-                <td>Data</td>
-                <td>Glo</td>
-                <td>08022835499</td>
+                <td>N5000</td>
+                <td>completed</td>
               </tr>
               <tr>
-                <td>3</td>
+                <td>1</td>
+                <td>#1656466664663133</td>
                 <td>01-02-2020</td>
-                <td>Dino's Decoder</td>
-                <td>Cable</td>
-                <td>DSTV</td>
-                <td>002135667664</td>
+                <td>N5000</td>
+                <td>completed</td>
               </tr>
             </tbody>
           </Table>
 				</Col>
 			</Row>
-		</>
+		</div>
 	);
 }

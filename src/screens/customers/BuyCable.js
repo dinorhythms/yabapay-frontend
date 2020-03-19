@@ -32,7 +32,7 @@ const BuyCable = () => {
 	return (
 		<>
 			<section>
-				<h3 className="mb-3">Cable Subscriptions</h3>
+				<h3 className="mb-3 text-center text-md-left">Cable Subscriptions</h3>
 				<h5 className="text-center text-md-left">Cable TV Payment</h5>
 				<hr />
 				<Row className="mt-4">
