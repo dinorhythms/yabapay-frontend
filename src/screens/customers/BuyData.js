@@ -30,7 +30,7 @@ const BuyData = () => {
 	return (
 		<>
       <section>
-        <h3 className="mb-3">Buy Data</h3>
+        <h3 className="mb-3 text-center text-md-left text-secondary">Buy Data</h3>
         <h5 className="text-center text-md-left">Mobile Data Topup</h5>
         <hr/>
         <Row className="mt-4">

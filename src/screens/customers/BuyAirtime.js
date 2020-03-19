@@ -27,7 +27,7 @@ const BuyAirtime = () => {
 
 	return (
 		<>
-			<h3 className="mb-3">Buy Airtime</h3>
+			<h3 className="mb-3 text-center text-md-left text-secondary">Buy Airtime</h3>
 			<h5 className="text-center text-md-left">Mobile Airtime Topup</h5>
       <hr/>
       <Row className="mt-4">

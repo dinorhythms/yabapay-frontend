@@ -33,6 +33,7 @@ import FundWallet from "./screens/customers/FundWallet";
 import Profile from "./screens/customers/Profile";
 import ChangePassword from "./screens/customers/ChangePassword";
 import Beneficiaries from "./screens/customers/Beneficiaries";
+import TopUpHistory from "./screens/customers/TopUpHistory";
 
 function App(props) {
 	return (
@@ -149,6 +150,13 @@ function App(props) {
 					exact={true}
 					path="/users/beneficiaries"
 					component={Beneficiaries}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/topup-history"
+					component={TopUpHistory}
 					Layout={CustomerLayout}
 					{...props}
 				/>

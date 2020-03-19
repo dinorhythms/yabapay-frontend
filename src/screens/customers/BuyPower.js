@@ -37,7 +37,7 @@ const BuyPower = () => {
 	return (
 		<>
 			<section>
-				<h3 className="mb-3">Power Bills</h3>
+				<h3 className="mb-3 text-center text-md-left text-secondary">Power Bills</h3>
 				<h5 className="text-center text-md-left">Electric Power Payment</h5>
 				<hr />
 				<Row className="mt-4">

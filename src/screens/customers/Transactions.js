@@ -10,8 +10,11 @@ export default function Transaction() {
 	const [key, setKey] = React.useState("all");
 
 	return (
-		<>
-			<h3 className="mb-3">Transactions</h3>
+		<div className="pt-2 pb-5">
+			<h6 className="text-secondary text-center text-md-left">
+				Transactions
+			</h6>
+			<h2 className="mb-3 text-center text-md-left">Transactions History</h2>
 
 			<Row className="mt-2">
 				<Col>
@@ -36,6 +39,6 @@ export default function Transaction() {
 					</Tabs>
 				</Col>
 			</Row>
-		</>
+		</div>
 	);
 }

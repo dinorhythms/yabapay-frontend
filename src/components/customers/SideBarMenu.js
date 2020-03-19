@@ -20,11 +20,11 @@ import './sideBar.css';
   // }
 
   return (
-    <Col xs={12} md={2} className="SideNav d-none d-sm-block">
+    <Col xs={12} md={2} className="SideNav d-none d-md-block">
       <div id="mySidenav">
         <Nav defaultActiveKey="/home" className="flex-column">
           <div className="d-flex pl-3 mb-3">
-            <Icon name="user-circle" size={35} color="black" />
+            <Icon name="user-circle" size={35} color="black" className="d-none d-md-none" />
             <h6 className="ml-3" style={{color: 'rgb(255, 128, 0)'}}>Tunmi Williams <br/> <small>Last Login: 2 Days Ago </small></h6>
           </div>
           
@@ -33,6 +33,7 @@ import './sideBar.css';
           <Nav.Link as={Link} to="/users/transactions"><Icon name="transgender-alt" size={15} color="black" /> Transactions</Nav.Link>
           <Nav.Link as={Link} to="/users/profile"><Icon name="user-circle" size={15} color="black" /> Profile</Nav.Link>
           <Nav.Link as={Link} to="/users/beneficiaries"><Icon name="address-book" size={15} color="black" /> Beneficiaries</Nav.Link>
+          <Nav.Link as={Link} to="/users/topup-history"><Icon name="address-book" size={15} color="black" /> Topup History</Nav.Link>
           <hr/>
           <h6 className="ml-3 text-dark">Services</h6>
           <Nav.Link as={Link} to="/users/airtime" eventKey="link-2"><Icon name="phone-square" size={15} color="black" /> Buy Airtime</Nav.Link>
