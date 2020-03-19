@@ -32,6 +32,7 @@ import PayCable from "./screens/customers/PayCable";
 import FundWallet from "./screens/customers/FundWallet";
 import Profile from "./screens/customers/Profile";
 import ChangePassword from "./screens/customers/ChangePassword";
+import Beneficiaries from "./screens/customers/Beneficiaries";
 
 function App(props) {
 	return (
@@ -141,6 +142,13 @@ function App(props) {
 					exact={true}
 					path="/users/update-password"
 					component={ChangePassword}
+					Layout={CustomerLayout}
+					{...props}
+				/>
+				<CustomerRoute
+					exact={true}
+					path="/users/beneficiaries"
+					component={Beneficiaries}
 					Layout={CustomerLayout}
 					{...props}
 				/>

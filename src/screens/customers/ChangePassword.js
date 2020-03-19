@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card, Col, Form, ListGroup, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ProfileRightBar from "../../components/customers/ProfileRightBar";
 
 const ChangePassword = () => {
 	const [oldPassword, setOldPassword] = useState("");
@@ -64,21 +65,7 @@ const ChangePassword = () => {
 									</Button>
 								</Form>
 							</Col>
-							<Col>
-								<Card style={{ width: "18rem" }}>
-									<ListGroup variant="flush">
-										<ListGroup.Item as={Link} to="/users/update-password">
-											Change Password
-										</ListGroup.Item>
-										<ListGroup.Item as={Link} to="/users/profile">
-											Update Profile
-										</ListGroup.Item>
-										<ListGroup.Item as={Link} to="/">
-											Logout
-										</ListGroup.Item>
-									</ListGroup>
-								</Card>
-							</Col>
+							<ProfileRightBar/>
 						</Row>
 					</Col>
 				</Row>
