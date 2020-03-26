@@ -1,22 +1,29 @@
 import React from "react";
-import SideBarMenu from "../components/customers/SideBarMenu";
 import { Container, Row, Col } from 'react-bootstrap';
 import NavBarMenu from "../components/customers/NavbarMenu";
+import CustomerNav from "../components/customers/CustomerNav";
+
+import './customerlayout.css'
 
 const CustomerLayout = props => {
   
 	return (
-    <>
-      <NavBarMenu/>
-      <Container fluid>
-        <Row>
-          <SideBarMenu/>
-          <Col xs={12} md={10} className="pl-4 pr-4" style={{paddingTop: '5rem'}}>
+    <div className="wrapper d-flex">
+      <CustomerNav/>
+      <div className="content">
+        <NavBarMenu/>
+        <Container fluid>
+          <div className="pl-md-4 pt-4">
             {props.children}
-          </Col>
-        </Row>
-      </Container>
-    </>
+          </div>
+          <Row>
+            <Col>
+              <p class="footer fixed-bottom pl-md-5">Terms of Use | Policy</p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </div>
 	);
 };
 

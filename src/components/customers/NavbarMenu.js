@@ -5,8 +5,8 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function NavBarMenu() {
   return (
-    <Navbar collapseOnSelect fixed="top" bg="light" className="text-white border-bottom border-primary" expand="md">
-      <Navbar.Brand href="#home">Yabapay</Navbar.Brand>
+    <Navbar collapseOnSelect bg="light" className="text-white border-bottom border-gray" expand="md">
+      <Navbar.Brand href="#home">yabapay</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav defaultActiveKey="/home" className="flex-column d-block d-md-none pt-4 pl-0 pb-4">
@@ -25,12 +25,13 @@ export default function NavBarMenu() {
           <Nav.Link as={Link} to="/users/" eventKey="link-2"><Icon name="plane" size={15} color="black" /> Buy Ticket</Nav.Link>
           <Nav.Link as={Link} to="/users/logout" className="mt-4" eventKey="link-2"><Icon name="lock" size={15} color="black" /> Logout</Nav.Link>
         </Nav>
-        <Nav className="ml-auto d-none d-sm-block">
-          <NavDropdown title="Profile" id="basic-nav-dropdown">
-            <NavDropdown.Item eventKey="link-2" as={Link} to="/users/profile">My Profile</NavDropdown.Item>
-            <NavDropdown.Item eventKey="link-2" as={Link} to="/users/update-password">Change Password</NavDropdown.Item>
+        <Nav className="ml-auto">
+          <Nav.Link className="mr-0 pr-0"><Icon name="user-circle" size={20} color="black" /></Nav.Link>
+          <NavDropdown title="" alignRight="false" id="basic-nav-dropdown">
+            <NavDropdown.Item as={Link} to="/users/profile">My Profile</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/users/update-password">Change Password</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item eventKey="link-2" as={Link} to="/">Logout</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/">Logout</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
